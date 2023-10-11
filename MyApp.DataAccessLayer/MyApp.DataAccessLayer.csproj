@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\Debug - Copy\**" />
+    <EmbeddedResource Remove="obj\Debug - Copy\**" />
+    <None Remove="obj\Debug - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\MyApp.DataAccessLayer.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\MyApp.DataAccessLayer.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\MyApp.DataAccessLayer.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.assets.cache" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.CopyComplete" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.dll" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\MyApp.DataAccessLayer.pdb" />
+    <None Include="obj\Debug\net6.0\refint\MyApp.DataAccessLayer.dll" />
+    <None Include="obj\Debug\net6.0\ref\MyApp.DataAccessLayer.dll" />
+    <None Include="obj\MyApp.DataAccessLayer.csproj.nuget.g.props" />
+    <None Include="obj\MyApp.DataAccessLayer.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.18" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.6.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyApp.Models\MyApp.Models.csproj" />
+    <ProjectReference Include="..\MyAppCommonHelper\MyAppCommonHelper.csproj" />
+  </ItemGroup>
+
+</Project>
